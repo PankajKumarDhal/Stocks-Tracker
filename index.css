@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 48%;
+}
+
+.dropdown-section,
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-section select,
+.search-section input {
+    padding: 0.5rem;
+    width: 80%;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.graph-section {
+    width: 100%;
+}
+
+canvas {
+    width: 100%;
+    max-width: 700px;
+}
+
+.stock-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock-table th,
+.stock-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.stock-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        max-width: 90%;
+    }
+}
